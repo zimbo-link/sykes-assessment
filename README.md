@@ -15,6 +15,12 @@ npm install
 npm run dev
 ```
 
+Generate an app key:
+
+```
+php artisan key:generate
+```
+
 Make sure your db is set in the .env file, mine is as follows:
 
 ```
