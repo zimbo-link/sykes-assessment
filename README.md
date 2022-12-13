@@ -15,14 +15,26 @@ npm install
 npm run dev
 ```
 
-Make sure your db is set in the env.
+Make sure your db is set in the .env file, mine is as follows:
 
 ```
-./artisan migrate
-./artisan db:seed --class=DatabaseSeeder
+DB_CONNECTION=mysql
+DB_HOST=mysql.loc.svc.23b.io
+DB_PORT=3306
+DB_DATABASE=devapp
+DB_USERNAME=root
+DB_PASSWORD=root
 ```
 
-You may need to use php infront of these commands if not running in a docker container:
+Run these commands to seed the database as in the task assignment:
+note: I have added more Properties to view the pagination.
+
+```
+php artisan migrate
+php artisan db:seed --class=DatabaseSeeder
+```
+
+Serve the application:
 
 ```
 php artisan serve
