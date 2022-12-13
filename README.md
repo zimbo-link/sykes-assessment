@@ -18,6 +18,7 @@ Make sure your db is set in the env.
 
 ```
 ./artisan migrate
+./artisan db:seed --class=DatabaseSeeder
 ```
 
 You will need to seed the db to login... sorry there is no registration 
