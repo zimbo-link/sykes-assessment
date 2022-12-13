@@ -7,13 +7,14 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-You know the usual...
+Run the usual setup commands for a Laravel project:
 
 ```
 composer update
 npm install
 npm run dev
 ```
+
 Make sure your db is set in the env.
 
 ```
@@ -21,12 +22,11 @@ Make sure your db is set in the env.
 ./artisan db:seed --class=DatabaseSeeder
 ```
 
-You will need to seed the db to login... sorry there is no registration 
+You may need to use php infront of these commands if not running in a docker container:
 
 ```
-artisan db:seed --class=UserSeeder
+php artisan serve
 ```
-
 The user and password is:
 
 ```
@@ -34,6 +34,6 @@ user: t.f.schuil@gmail.com
 pass: password
 ```
 
-Lastly the index page is the usual, so click on the Dashboard link to get started or head on over to /dashboard
+You should now be able to login.
 
-yep it was a breeze... haha no pun intended :)
+
